@@ -1,0 +1,73 @@
+{
+  "repo": "harbor-mob-cache-core",
+  "language": "Go",
+  "category": "Mobile workflows",
+  "goal": "Create a Go reference implementation for cache workflows, centered on security rule linting, safe and unsafe fixtures, and remediation hints.",
+  "review_model": {
+    "terms": [
+      "form pressure",
+      "sync drift",
+      "local state",
+      "conflict cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "form pressure",
+      "signal": 43,
+      "slack": 49,
+      "drag": 20,
+      "confidence": 89,
+      "score": 164,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "sync drift",
+      "signal": 48,
+      "slack": 37,
+      "drag": 21,
+      "confidence": 81,
+      "score": 151,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "local state",
+      "signal": 72,
+      "slack": 23,
+      "drag": 29,
+      "confidence": 91,
+      "score": 171,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "conflict cost",
+      "signal": 88,
+      "slack": 33,
+      "drag": 31,
+      "confidence": 81,
+      "score": 197,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "form pressure",
+      "signal": 82,
+      "slack": 29,
+      "drag": 22,
+      "confidence": 91,
+      "score": 218,
+      "lane": "ship"
+    }
+  ]
+}
