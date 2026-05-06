@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,66,82,15,15,8,89,review,mobile workflows baseline scenario exercises the review path for bounded failure handling
+pressure,79,68,30,20,9,11,review,mobile workflows pressure scenario exercises the review path for bounded failure handling
+surge,101,97,19,14,14,195,accept,mobile workflows surge scenario keeps the local fixture within the modeled acceptance band
+degraded,71,60,37,27,8,-95,review,mobile workflows degraded scenario exercises the review path for bounded failure handling
+recovery,86,102,16,12,11,181,accept,mobile workflows recovery scenario keeps the local fixture within the modeled acceptance band
+boundary,78,85,26,15,10,82,review,mobile workflows boundary scenario exercises the review path for bounded failure handling
